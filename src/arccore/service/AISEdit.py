@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 # ---------------------------------------------------------------------------
-# script name : AISDDraftEditor
-# Description : 服务草稿文件编辑器
+# script name : AISEdit
+# Description : 服务草稿文件编辑类
 # project : GIS
-# author : zhoufl
-# create date :2015年8月14日
+# author : zhoufl3
+# create date :2016年1月5日
 # ---------------------------------------------------------------------------
 # Modify record
 # author :
@@ -13,16 +13,16 @@
 # ---------------------------------------------------------------------------
 
 import os
-import logging
 import xml.dom.minidom as DOM  
+from arccore.utils.AIUtils import AIUtils
+from arccore.utils.AIStrUtils import AIStrUtils
 
-class AISDDraftEditor(object):
+class AISEdit(object):
     '''
-    classdocs
+    服务草稿文件编辑类
     '''
     __sddraftFullName = None # 服务草稿文件全路径
     __sddraftDoc = None # 服务草稿文件文档
-    __logger = logging.getLogger("aigis.core.Utils.AISDDraftEditor") # 日志
 
     def __init__(self, sddraftFullName):
         '''
@@ -33,7 +33,7 @@ class AISDDraftEditor(object):
                 self.__sddraftFullName = sddraftFullName.replace('\\', '/')
                 self.__sddraftDoc = DOM.parse(self.__sddraftFullName)
             except:
-                self.__logger.exception('服务草稿文件解析失败:')
+                raise
     
     def getSddraftDoc(self):
         '''
@@ -292,32 +292,38 @@ class AISDDraftEditor(object):
     
             return {'summary':summary, 'tags':tags, 'description':description}
     
-    def getMapServerPartRestUrl(self):
+    def getMapRestUrl(self):
         '''
-         获取局部底图服务Rest地址
+         获取局部地图服务Rest地址
         '''
-        return '/rest/services/' + ((self.getServiceFolder() + '/') if self.getServiceFolder() else '') + (self.getServiceName() + '/MapServer')
+        return '/rest/services/' + '' if AIUtils.isEmpty(self.getServiceFolder()) else (self.getServiceFolder() + '/') + (self.getServiceName() + '/MapServer')
     
-    def getFeatureServerPartRestUrl(self):
+    def getKmlRestUrl(self):
+        '''
+         获取局部Kml服务Rest地址
+        '''
+        return '/rest/services/' + '' if AIUtils.isEmpty(self.getServiceFolder()) else (self.getServiceFolder() + '/') + (self.getServiceName() + '/MapServer/KmlServer')
+    
+    def getFeatureRestUrl(self):
         '''
          获取局部要素服务Rest地址
         '''
         if self.getSvcExtension('FeatureServer'):
-            return '/rest/services/' + ((self.getServiceFolder() + '/') if self.getServiceFolder() else '') + (self.getServiceName() + '/FeatureServer')
+            return '/rest/services/' + '' if AIUtils.isEmpty(self.getServiceFolder()) else (self.getServiceFolder() + '/') + (self.getServiceName() + '/FeatureServer')
     
-    def getWMSPartRestUrl(self):
+    def getWMSRestUrl(self):
         '''
          获取局部WMS服务Rest地址
         '''
         if self.getSvcExtension('WMSServer'):
-            return '/rest/services/' + ((self.getServiceFolder() + '/') if self.getServiceFolder() else '') + (self.getServiceName() + '/MapServer/WMSServer')
+            return '/rest/services/' + '' if AIUtils.isEmpty(self.getServiceFolder()) else (self.getServiceFolder() + '/') + (self.getServiceName() + '/MapServer/WMSServer')
     
-    def getWFSPartRestUrl(self):
+    def getWFSRestUrl(self):
         '''
          获取局部WFS服务Rest地址
         '''
         if self.getSvcExtension('WFSServer'):
-            return '/rest/services/' + ((self.getServiceFolder() + '/')  if self.getServiceFolder() else '') + (self.getServiceName() + '/MapServer/WFSServer')
+            return '/rest/services/' + '' if AIUtils.isEmpty(self.getServiceFolder()) else (self.getServiceFolder() + '/') + (self.getServiceName() + '/MapServer/WFSServer')
         
 if __name__ == '__main__':
     pass
