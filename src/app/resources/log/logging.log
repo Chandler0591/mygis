@@ -1,0 +1,60 @@
+[2016-01-19 19:52:44](INFO)app.scripts.queryFds : 读取Python服务端日志配置成功
+[2016-01-19 19:52:48](INFO)app.scripts.queryFds : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 19:54:37](INFO)app.scripts.queryFds : 读取Python服务端日志配置成功
+[2016-01-19 19:54:41](INFO)app.scripts.queryFds : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 19:56:26](INFO)app.scripts.addFds : 读取Python服务端日志配置成功
+[2016-01-19 19:56:30](INFO)app.scripts.addFds : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 19:57:59](INFO)app.scripts.addFds : 读取Python服务端日志配置成功
+[2016-01-19 19:58:04](INFO)app.scripts.addFds : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 19:58:30](INFO)app.scripts.addFds : ERROR 000258: Output D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde\test333 already exists
+Failed to execute (CreateFeatureDataset).
+
+[2016-01-19 19:58:30](INFO)app.scripts.addFds : 要素集test333新增失败
+[2016-01-19 20:00:10](INFO)app.scripts.addFds : 读取Python服务端日志配置成功
+[2016-01-19 20:00:14](INFO)app.scripts.addFds : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 20:00:40](INFO)app.scripts.addFds : ERROR 000258: Output D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde\test333 already exists
+Failed to execute (CreateFeatureDataset).
+
+[2016-01-19 20:00:40](INFO)app.scripts.addFds : 要素集test333新增失败
+[2016-01-19 20:01:16](INFO)app.scripts.addFds : 读取Python服务端日志配置成功
+[2016-01-19 20:01:20](INFO)app.scripts.addFds : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 20:01:48](INFO)app.scripts.addFds : ERROR 000258: Output D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde\test333 already exists
+Failed to execute (CreateFeatureDataset).
+
+[2016-01-19 20:01:48](INFO)app.scripts.addFds : 要素集test333新增失败
+[2016-01-19 20:04:43](INFO)app.scripts.removeFds : 读取Python服务端日志配置成功
+[2016-01-19 20:04:47](INFO)app.scripts.removeFds : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 20:07:59](INFO)app.scripts.queryFc : 读取Python服务端日志配置成功
+[2016-01-19 20:08:04](INFO)app.scripts.queryFc : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 20:09:12](INFO)app.scripts.queryFc : 读取Python服务端日志配置成功
+[2016-01-19 20:09:17](INFO)app.scripts.queryFc : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 20:10:20](INFO)app.scripts.queryFc : 读取Python服务端日志配置成功
+[2016-01-19 20:10:24](INFO)app.scripts.queryFc : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 20:12:24](INFO)app.scripts.queryFc : 读取Python服务端日志配置成功
+[2016-01-19 20:12:28](INFO)app.scripts.queryFc : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 20:14:39](INFO)app.scripts.addFc : 读取Python服务端日志配置成功
+[2016-01-19 20:14:43](INFO)app.scripts.addFc : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 20:15:41](INFO)app.scripts.addFc : 读取Python服务端日志配置成功
+[2016-01-19 20:15:48](INFO)app.scripts.addFc : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 20:16:28](INFO)app.scripts.addFc : ERROR 000258: Output D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde/gis.test333\ent_4326_7 already exists
+Failed to execute (CreateFeatureclass).
+
+[2016-01-19 20:16:28](INFO)app.scripts.addFc : 要素类ent_4326_7新增失败
+[2016-01-19 20:18:27](INFO)app.scripts.addFc : 读取Python服务端日志配置成功
+[2016-01-19 20:18:32](INFO)app.scripts.addFc : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 20:20:46](INFO)app.scripts.updateFc : 读取Python服务端日志配置成功
+[2016-01-19 20:20:50](INFO)app.scripts.updateFc : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 20:20:54](INFO)app.scripts.updateFc : ERROR 000464: Cannot get exclusive schema lock.  Either being edited or in use by another application.
+Failed to execute (DeleteField).
+
+[2016-01-19 20:20:54](INFO)app.scripts.updateFc : 要素类gis.ent_4326_7更新失败
+[2016-01-19 20:21:49](INFO)app.scripts.updateFc : 读取Python服务端日志配置成功
+[2016-01-19 20:21:54](INFO)app.scripts.updateFc : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 20:23:38](INFO)app.scripts.removeFc : 读取Python服务端日志配置成功
+[2016-01-19 20:23:42](INFO)app.scripts.removeFc : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
+[2016-01-19 20:23:44](INFO)app.scripts.removeFc : ERROR 000464: Cannot get exclusive schema lock.  Either being edited or in use by another application.
+Failed to execute (Delete).
+
+[2016-01-19 20:23:44](INFO)app.scripts.removeFc : 要素类ent_4326_7删除失败
+[2016-01-19 20:24:24](INFO)app.scripts.removeFc : 读取Python服务端日志配置成功
+[2016-01-19 20:24:28](INFO)app.scripts.removeFc : 工作空间D:/GitHome/mygis/src/app/resources/sde/arcgis21.sde初始化成功
